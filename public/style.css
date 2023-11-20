@@ -1,0 +1,38 @@
+body {
+
+    height: 100vh;
+
+    background: linear-gradient(135deg, #7bc393, #31b7c2);
+    color: yellow;
+}
+
+.image-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 25%;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#clicker {
+    width: 25%;
+    border-radius: 10px;
+}
