@@ -54,6 +54,7 @@ app.get('/show-waifu', (req, res)=> {
                 const waifuData = {
                     url: waifuInformation.url,
                     tags: waifuInformation.tags,
+                    source: waifuInformation.source,
                     artist: {
                         name: "unknown"
                     }
@@ -64,6 +65,7 @@ app.get('/show-waifu', (req, res)=> {
                 const waifuData = {
                     url: waifuInformation.url,
                     tags: waifuInformation.tags,
+                    source: waifuInformation.source,
                     artist: waifuInformation.artist
                 }
                 return res.render('index', waifuData)

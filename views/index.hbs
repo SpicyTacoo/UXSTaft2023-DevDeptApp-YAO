@@ -6,14 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <title>Waifu Clicker</title>
+
+    <script> 
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
+
 <body>
     <div class="container">
         <div class="inner-container">
+            <h1>Waifu Clicker</h1>
             <div class="image-container">
-                <img src="{{url}}" alt="a waifu" > <br>
-                <a href="{{url}}">Source</a>
-                <p>Artist: {{artist.name}}</p>
+                <img src="{{url}}" alt="a waifu" >
+
+                <div id="information">
+                    <a id="source" href="{{source}}">Source</a>
+                    <p id="artist">Artist: {{artist.name}}</p>
+                </div>
+
             </div>
             <input id="clicker" type="button" value="New Waifu" onclick="location.href='/show-waifu'">
         </div>
