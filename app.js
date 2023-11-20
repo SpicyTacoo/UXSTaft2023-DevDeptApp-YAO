@@ -4,6 +4,7 @@ import path from "path";
 import {fileURLToPath} from 'url';
 import cors from "cors";
 import bodyParser from "body-parser";
+import fetch from "node-fetch";
 
 // to allow __dirname to work in ES6
 const __filename = fileURLToPath(import.meta.url);
